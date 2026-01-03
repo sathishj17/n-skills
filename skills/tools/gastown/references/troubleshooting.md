@@ -356,7 +356,7 @@ bd doctor              # Check beads health
 - Missing daemon config
 - Patrols not configured in daemon.json
 
-**FixHint:** `Configure patrols in mayor/daemon.json or run 'gt daemon init'`
+**FixHint:** `Configure patrols in mayor/daemon.json or run 'gt deacon init'`
 
 ---
 
@@ -1027,7 +1027,7 @@ pkill -f "claude.*--dangerously-skip-permissions" || true
 gt doctor --fix
 
 # 5. Restart daemon
-gt daemon restart
+gt deacon restart
 
 # 6. Verify health
 gt doctor
@@ -1123,20 +1123,20 @@ When the daemon is unresponsive:
 
 ```bash
 # 1. Check daemon status
-gt daemon status
+gt deacon status
 
 # 2. Check daemon logs
 cat ~/gt/.beads/daemon.log
 
 # 3. Stop daemon forcefully
-gt daemon stop --force
+gt deacon stop --force
 
 # 4. Clean stale markers
 rm -f ~/gt/mayor/boot/.marker
 
 # 5. Restart daemon
-gt daemon start
+gt deacon start
 
 # 6. Verify
-gt daemon status
+gt deacon status
 ```

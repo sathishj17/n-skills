@@ -367,6 +367,23 @@ ssh -T git@github.com
 # See: https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 ```
 
+### Local repository push failures
+
+**Error**: When pushing to local test repos (not GitHub):
+```
+error: refusing to update checked out branch: refs/heads/main
+```
+
+**Cause**: Git's safety setting prevents pushes to non-bare repos with checked-out branches.
+
+**Fix**: Configure the local repo to accept pushes:
+```bash
+cd /path/to/local/repo
+git config receive.denyCurrentBranch ignore
+```
+
+**Note**: This is only needed for local test repositories. GitHub remotes work automatically.
+
 ### Beads sync issues across clones
 
 **Fix**:

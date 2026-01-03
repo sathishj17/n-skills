@@ -164,9 +164,9 @@ The **Deacon** is the background supervisor daemon. Singleton, persistent. Manag
 ### Deacon Commands
 
 ```bash
-gt daemon start                   # Start the daemon
-gt daemon stop                    # Stop the daemon
-gt daemon status                  # Check daemon health
+gt deacon start                   # Start the deacon
+gt deacon stop                    # Stop the deacon
+gt deacon status                  # Check deacon health
 ```
 
 ### Deacon Identity
@@ -354,12 +354,42 @@ Polecat                    Witness                    Refinery
 - Parallelizable work
 - Work that benefits from supervision
 
+### Multi-Polecat Coordination
+
+When running multiple polecats on the same project, **sequence foundational work**:
+
+```
+✅ GOOD: Sequential foundation, parallel features
+   Polecat 1: "Set up SvelteKit" (merged first)
+   Polecat 2: "Add auth feature" (builds on #1)
+   Polecat 3: "Add dashboard" (builds on #1)
+
+❌ BAD: Parallel foundation work
+   Polecat 1: "Set up SvelteKit"
+   Polecat 2: "Set up SvelteKit"  ← Merge conflicts!
+```
+
+**Rule:** First polecat does foundational setup (package.json, build config, framework init). Subsequent polecats build on that foundation.
+
 ### Polecat Identity
 
 ```
 BD_ACTOR = <rig>/polecats/<name>
 Example:  gastown/polecats/toast
 ```
+
+### Session Naming Convention
+
+Tmux sessions follow the pattern: `gt-<rig>-<name>`
+
+```
+Examples:
+  gt-cognition-furiosa     Polecat "furiosa" in cognition rig
+  gt-cognition-witness     Witness agent for cognition rig
+  gt-cognition-refinery    Refinery agent for cognition rig
+```
+
+**Don't guess session names.** Use `gt polecat list` or `tmux list-sessions` to see actual names.
 
 ### Polecat Commands
 

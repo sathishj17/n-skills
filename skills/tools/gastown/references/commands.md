@@ -578,10 +578,10 @@ gt mq [subcommand] [flags]
 | Subcommand | Description |
 |------------|-------------|
 | `list` | List items in merge queue |
-| `add <branch>` | Add a branch to the queue |
-| `next` | Process next item in queue |
+| `submit <branch>` | Submit a branch to the queue |
+| `retry <item>` | Retry a failed queue item |
+| `reject <item>` | Reject an item from the queue |
 | `status` | Show queue status |
-| `clear` | Clear the queue |
 
 **Flags for `mq list`:**
 | Flag | Description |
@@ -593,10 +593,10 @@ gt mq [subcommand] [flags]
 **Examples:**
 ```bash
 gt mq list                            # List queue items
-gt mq add feature/my-branch           # Add to queue
-gt mq next                            # Process next item
+gt mq submit feature/my-branch        # Submit to queue
+gt mq retry mq-001                    # Retry failed item
+gt mq reject mq-002                   # Reject an item
 gt mq status                          # Show queue status
-gt mq clear                           # Clear the queue
 ```
 
 ---
@@ -607,19 +607,22 @@ Manage refinery (merge processor) agents.
 
 **Syntax:**
 ```bash
-gt refinery <subcommand> [flags]
+gt refinery <subcommand> [rig] [flags]
 ```
 
 **Subcommands:**
 | Subcommand | Description |
 |------------|-------------|
-| `status` | Show refinery status |
-| `start` | Start the refinery |
-| `stop` | Stop the refinery |
-| `unclaimed` | Show unclaimed branches ready for processing |
-| `queue` | Show the merge queue |
+| `status [rig]` | Show refinery status |
+| `start <rig>` | Start the refinery for a rig |
+| `stop <rig>` | Stop the refinery for a rig |
+| `attach <rig>` | Attach to refinery session |
+| `restart <rig>` | Restart the refinery |
+| `queue [rig]` | Show the merge queue |
+| `claim <branch>` | Claim a branch for processing |
+| `release <branch>` | Release a claimed branch |
 
-**Flags for `refinery unclaimed`:**
+**Flags:**
 | Flag | Description |
 |------|-------------|
 | `--rig string` | Target rig |
@@ -627,17 +630,22 @@ gt refinery <subcommand> [flags]
 
 **Examples:**
 ```bash
-gt refinery status                    # Show status
-gt refinery start                     # Start refinery
-gt refinery stop                      # Stop refinery
-gt refinery unclaimed                 # List unclaimed work
+gt refinery status                    # Show all refinery status
+gt refinery status myrig              # Show refinery for specific rig
+gt refinery start myrig               # Start refinery for rig
+gt refinery stop myrig                # Stop refinery for rig
+gt refinery attach myrig              # Attach to refinery session
+gt refinery restart myrig             # Restart refinery
 gt refinery queue                     # Show merge queue
+gt refinery claim polecat/toast       # Claim branch for processing
+gt refinery release polecat/toast     # Release claimed branch
 ```
 
 **Common Use Cases:**
 - Monitoring merge progress
 - Checking for stalled merges
 - Managing refinery lifecycle
+- Manual claim/release for conflict resolution
 
 ---
 
@@ -1090,21 +1098,31 @@ Manage witness (polecat supervisor) agents.
 
 **Syntax:**
 ```bash
-gt witness [subcommand] [flags]
+gt witness [subcommand] [rig] [flags]
 ```
 
 **Subcommands:**
 | Subcommand | Description |
 |------------|-------------|
-| `status` | Show witness status |
-| `patrol` | Run patrol cycle |
-| `survey` | Survey all polecats |
+| `start <rig>` | Start the witness for a rig |
+| `stop <rig>` | Stop the witness for a rig |
+| `attach <rig>` | Attach to witness session |
+| `restart <rig>` | Restart the witness |
+| `status [rig]` | Show witness status |
+
+**Flags:**
+| Flag | Description |
+|------|-------------|
+| `--json` | Output as JSON |
 
 **Examples:**
 ```bash
-gt witness status                     # Show status
-gt witness patrol                     # Run patrol
-gt witness survey                     # Survey polecats
+gt witness status                     # Show all witness status
+gt witness status myrig               # Show witness for specific rig
+gt witness start myrig                # Start witness for rig
+gt witness stop myrig                 # Stop witness for rig
+gt witness attach myrig               # Attach to witness session
+gt witness restart myrig              # Restart witness
 ```
 
 ---

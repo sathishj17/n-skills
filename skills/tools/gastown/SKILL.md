@@ -20,6 +20,25 @@ When operating Gas Town:
 This is not documentation for users to follow. This is YOUR operational manual.
 You ARE the interface. The terminal is YOUR tool, not theirs.
 
+## Operational Boundaries
+
+**What GT handles automatically (don't do manually):**
+- Agent beads - created when agents spawn
+- Session names - format `gt-<rig>-<name>` (use `gt polecat list` to see actual names)
+- Prefix routing - maps prefixes to databases via routes.jsonl
+- Polecat spawning - `gt sling` creates the polecat and session
+
+**What you handle:**
+- Task beads - `bd create --title "..."`
+- Slinging work - `gt sling <bead> <rig>`
+- Patrol activation - send mail to trigger Witness/Refinery (see Commands)
+- Monitoring - `gt status`, `gt peek`, `gt doctor`
+
+**Common mistakes:**
+- ❌ Don't create agent beads manually - GT does this
+- ❌ Don't guess session names - use `gt polecat list`
+- ❌ Don't assume patrols self-activate - send mail to trigger them
+
 ## How Gas Town Works
 
 ```
@@ -440,7 +459,13 @@ Refinery (Merge Pipeline)
   gt refinery start        Start the Refinery
   gt refinery status       Check Refinery status
   gt refinery queue        Show merge queue
+
+Patrol Activation (Trigger Witness/Refinery)
+  gt mail send <rig>/witness -s "Patrol" -m "Process completed work"
+  gt mail send <rig>/refinery -s "Patrol" -m "Process merge queue"
 ```
+
+**Note:** Witness and Refinery are Claude agents, not daemons. They respond to mail instructions.
 
 ## Reference Guide
 
