@@ -84,6 +84,23 @@ skills:
     license: Apache-2.0
     homepage: https://github.com/steveyegge/gastown
 
+  # ─────────────────────────────────────────────────────────────────────────
+  # orchestration - Multi-agent workflow orchestration (native skill)
+  # ─────────────────────────────────────────────────────────────────────────
+
+  - name: orchestration
+    description: Multi-agent orchestration for complex tasks using cc-mirror tasks and TodoWrite. Use when tasks require parallel work, multiple agents, sophisticated coordination, or decomposition into parallel subtasks.
+    native: true
+    target:
+      category: workflow
+      path: skills/workflow/orchestration
+    author:
+      name: Numman Ali
+      github: numman-ali
+      twitter: nummanali
+    license: Apache-2.0
+    homepage: https://github.com/numman-ali/n-skills
+
 # ─────────────────────────────────────────────────────────────────────────────
 # Schema Reference
 # ─────────────────────────────────────────────────────────────────────────────
