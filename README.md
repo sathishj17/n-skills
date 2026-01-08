@@ -69,6 +69,7 @@ We embrace the diversity with a universal approach:
 
 Then install any skill:
 ```bash
+/plugin install orchestration@n-skills
 /plugin install gastown@n-skills
 /plugin install dev-browser@n-skills
 /plugin install zai-cli@n-skills
@@ -102,6 +103,7 @@ $skill-installer https://github.com/numman-ali/n-skills/tree/main/skills/tools/z
 
 | Skill | Category | Source | Description |
 |:------|:---------|:-------|:------------|
+| **[orchestration](./skills/workflow/orchestration/)** | `workflow` | native | Multi-agent orchestration with cc-mirror tasks + TodoWrite |
 | **[dev-browser](./skills/automation/dev-browser/)** | `automation` | [SawyerHood](https://github.com/SawyerHood/dev-browser) | Browser automation with persistent page state |
 | **[gastown](./skills/tools/gastown/)** | `tools` | native | Multi-agent orchestrator (best with Claude Code + Opus) |
 | **[zai-cli](./skills/tools/zai-cli/)** | `tools` | native | Z.AI vision, search, reader, and GitHub exploration via MCP |
@@ -114,6 +116,7 @@ $skill-installer https://github.com/numman-ali/n-skills/tree/main/skills/tools/z
 
 | Category | What goes here |
 |:---------|:---------------|
+| `workflow` | Multi-agent orchestration, task coordination |
 | `tools` | CLI tools and utilities |
 | `development` | Language-specific dev assistance |
 | `productivity` | Workflow automation |
@@ -209,9 +212,11 @@ n-skills/
 ├── skills/
 │   ├── automation/
 │   │   └── dev-browser/       # Synced from SawyerHood
-│   └── tools/
-│       ├── gastown/           # Native skill
-│       └── zai-cli/           # Native skill
+│   ├── tools/
+│   │   ├── gastown/           # Native skill
+│   │   └── zai-cli/           # Native skill
+│   └── workflow/
+│       └── orchestration/     # Native skill - multi-agent coordination
 └── docs/
     ├── skill-format.md        # How to write skills
     ├── cross-platform.md      # Multi-agent compatibility

@@ -42,6 +42,13 @@ Invoke skills using: `openskills read <skill-name>`
 <invoke>openskills read gastown</invoke>
 </skill>
 
+<skill>
+<name>orchestration</name>
+<description>Multi-agent orchestration for complex tasks using cc-mirror tasks and TodoWrite. Use when tasks require parallel work, multiple agents, sophisticated coordination, or decomposition into parallel subtasks. Triggers include features, reviews, refactoring, testing, documentation, or any work benefiting from parallel execution.</description>
+<location>skills/workflow/orchestration</location>
+<invoke>openskills read orchestration</invoke>
+</skill>
+
 </available_skills>
 
 ## Categories
@@ -52,6 +59,9 @@ Invoke skills using: `openskills read <skill-name>`
 
 ### automation
 - **dev-browser**: Browser automation with persistent page state
+
+### workflow
+- **orchestration**: Multi-agent orchestration for complex tasks using cc-mirror tasks and TodoWrite
 
 ## Attribution
 

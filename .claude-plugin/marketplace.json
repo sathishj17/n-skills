@@ -32,11 +32,20 @@
         "./skills/tools/gastown"
       ],
       "strict": false
+    },
+    {
+      "name": "orchestration",
+      "description": "Multi-agent orchestration for complex tasks using cc-mirror tasks and TodoWrite. Use when tasks require parallel work, multiple agents, sophisticated coordination, or decomposition into parallel subtasks. Includes domain guides for software development, code review, testing, documentation, DevOps, and more.",
+      "source": "./",
+      "skills": [
+        "./skills/workflow/orchestration"
+      ],
+      "strict": false
     }
   ],
   "metadata": {
-    "version": "1.0.2",
-    "generated_at": "2026-01-06T00:21:09.372Z",
-    "skill_count": 3
+    "version": "1.1.0",
+    "generated_at": "2026-01-08T12:00:00.000Z",
+    "skill_count": 4
   }
 }
